@@ -8,6 +8,7 @@ Displays current glucose in mmol/L with a trend arrow — e.g. `5.4↗`
 
 - Neovim 0.10+
 - `curl` on `$PATH`
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) (auto-installed as a dependency)
 
 ## Installation
 
@@ -17,6 +18,7 @@ Displays current glucose in mmol/L with a trend arrow — e.g. `5.4↗`
 {
   "v3se/nightscout.nvim",
   version = "*",
+  dependencies = { "nvim-lualine/lualine.nvim" },
   opts = {},
 }
 ```
