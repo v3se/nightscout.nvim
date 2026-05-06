@@ -14,8 +14,10 @@ Displays current glucose in mmol/L with a trend arrow — e.g. `5.4↗`
 
 ### [lazy.nvim](https://github.com/folke/lazy.nvim)
 
+Create `~/.config/nvim/lua/plugins/nightscout.lua`:
+
 ```lua
-{
+return {
   "v3se/nightscout.nvim",
   version = "*",
   dependencies = { "nvim-lualine/lualine.nvim" },
@@ -44,7 +46,7 @@ opts = {
 
 ## Lualine
 
-Add `"nightscout"` to your lualine sections:
+In your existing lualine config (e.g. `~/.config/nvim/lua/plugins/lualine.lua`), add `"nightscout"` to your sections:
 
 ```lua
 require("lualine").setup({
