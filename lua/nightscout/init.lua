@@ -20,10 +20,10 @@ local arrows = {
 function M.setup(opts)
 	config = vim.tbl_deep_extend("force", defaults, opts or {})
 	if config.url == "" then
-		config.url = vim.fn.getenv("NIGHTSCOUT_URL") or ""
+		config.url = vim.env.NIGHTSCOUT_URL or ""
 	end
 	if config.token == "" then
-		config.token = vim.fn.getenv("NIGHTSCOUT_TOKEN") or ""
+		config.token = vim.env.NIGHTSCOUT_TOKEN or ""
 	end
 	M.fetch()
 	local timer = assert(vim.uv.new_timer())
