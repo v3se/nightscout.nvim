@@ -25,7 +25,7 @@ Displays current glucose in mmol/L with a trend arrow — e.g. `5.4↗`
 
 ## Configuration
 
-Credentials are read from environment variables by default:
+Credentials are read from environment variables by default (e.g. set in `~/.zshenv`):
 
 ```sh
 export NIGHTSCOUT_URL="https://your-nightscout-instance.example.com"
